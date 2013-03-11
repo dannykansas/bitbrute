@@ -2,7 +2,7 @@ import pycurl
 import sys
 from StringIO import StringIO
 
-def check(address):
+def apicheck(address):
 	
 	apiURL = 'http://blockchain.info/q/addressbalance/'
 	
@@ -22,10 +22,14 @@ def check(address):
 		print "Balance is: " + str(balance) + " for " + address
 		return address,balance
 
+# Placeholder for local blockchain balance parse lookup
+def localcheck(address):
+	return
+
 # Set manually, haven't added getopt yet
 infile = 'test.txt'	
 with open(infile) as f:
 	for line in f:
 		line = line.split(', ')
-		check(line[1].rstrip())
+		apicheck(line[1].rstrip())
 	print "Complete!"

@@ -53,7 +53,6 @@ def main(argv):
 		for line in f:
 			print "Hashing: " + line.rstrip()
 			linehash, p = gethash(line.rstrip())
-#			print "linehash is %s", linehash
 			fout.write(linehash + ', ' + p + '\n')
 	return		
 
