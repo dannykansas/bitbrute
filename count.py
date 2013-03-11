@@ -5,7 +5,7 @@ def getcount(argv):
 	with open(argv) as f:
 		for line in f:
 			i = i+1
-		print "File contains " + str(i) + " lines"
+		print argv + " contains " + str(i) + " lines"
 
 if __name__ == "__main__":
 	getcount(sys.argv[1])
