@@ -7,4 +7,4 @@ Requires:
 3. pycURL
 4. other stuff that should be built-in 
 
-
+**NOTE:** This version has been deprecated by bitbrute-reloaded
