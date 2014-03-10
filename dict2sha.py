@@ -3,7 +3,7 @@
 # Convert dictionary input file to outfile containing 
 # bitcoin private key and matching public address.
 #
-# Don't be rude.
+# License: Don't be rude.
 #
 # - dannykansas
 #
