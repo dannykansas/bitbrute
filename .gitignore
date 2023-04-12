@@ -3,6 +3,9 @@
 # C extensions
 *.so
 
+# Rust build output
+**/target/*
+
 # Packages
 *.egg
 *.egg-info

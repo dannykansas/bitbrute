@@ -23,4 +23,3 @@ def addy(pk):
  for l in ['123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'[x] for x in pubnumlist]:
   address=l+address
  return '1'+address
-

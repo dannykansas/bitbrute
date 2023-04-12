@@ -19,7 +19,7 @@ def apicheck(address):
 #		print "Zero balance, rejected."
 		return
 	else:
-		print "Balance is: " + str(balance) + " for " + address
+		print("Balance is: " + str(balance) + " for " + address)
 		return address,balance
 
 # Placeholder for local blockchain balance parse lookup
@@ -32,4 +32,4 @@ with open(infile) as f:
 	for line in f:
 		line = line.split(', ')
 		apicheck(line[1].rstrip())
-	print "Complete!"
+	print("Complete!")

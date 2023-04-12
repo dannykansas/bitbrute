@@ -3,10 +3,7 @@
 # Convert dictionary input file to outfile containing 
 # bitcoin private key and matching public address.
 #
-# License: Don't be rude.
-#
-# - dannykansas
-#
+# Usage: dict2sha.py -i <inputfile> -o <outputfile>
 
 import binascii
 import hashlib
@@ -35,11 +32,11 @@ def main(argv):
 	try:
 		opts, args = getopt.getopt(argv, "hi:o:",["ifile=","ofile="])
 	except getopt.GetopError:
-		print 'dict2sha.py -i <inputfile> -o <outputfile>'
+		print('dict2sha.py -i <inputfile> -o <outputfile>')
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
-			print 'text.py -i <inputfile> -o <outputfile>'
+			print('text.py -i <inputfile> -o <outputfile>')
 			sys.exit()
 		elif opt in ("-i", "--infile"):
 			infile = arg
@@ -51,7 +48,7 @@ def main(argv):
 
 	with open(infile) as f:
 		for line in f:
-			print "Hashing: " + line.rstrip()
+			print("Hashing: " + line.rstrip())
 			linehash, p = gethash(line.rstrip())
 			fout.write(linehash + ', ' + p + '\n')
 	return		
