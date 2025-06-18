@@ -1,6 +1,6 @@
 import pycurl
 import sys
-from StringIO import StringIO
+from io import StringIO
 
 def apicheck(address):
 	

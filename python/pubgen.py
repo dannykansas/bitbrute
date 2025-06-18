@@ -18,7 +18,7 @@ def addy(pk):
  pubkey6=pubkey3+pubkey5[:8]
  pubnum=int(pubkey6,16)
  pubnumlist=[]
- while pubnum!=0: pubnumlist.append(pubnum%58); pubnum/=58
+ while pubnum!=0: pubnumlist.append(pubnum%58); pubnum//=58
  address=''
  for l in ['123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'[x] for x in pubnumlist]:
   address=l+address
